@@ -12,5 +12,9 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  build: {
+    outDir: 'dist', // Указывает, куда помещать результирующие файлы
+    emptyOutDir: true // Очищает папку `dist` перед каждой сборкой
   }
 })
